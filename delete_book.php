@@ -17,7 +17,7 @@
                 if ($_POST['confirm'] == 'yes') {
                     $servername = "localhost";
                     $username = "root";
-                    $password = "sreelor254";
+                    $password = "root";
                     $dbname = "library";
 
                     // Create connection
