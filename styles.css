@@ -1,0 +1,234 @@
+/* General styles for body and html */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar styles */
+
+/* Background image style */
+.background {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box styles */
+.login-box {
+    width: 300px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8); /* More opacity for more black color */
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 18px;
+}
+
+.textbox input:focus {
+    outline: none;
+    border-bottom: 2px solid #1652a0;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #1652a0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #1652a0;
+    border: 2px solid #1652a0;
+}
+
+/* Dashboard styles */
+.dashboard-box {
+    width: 300px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-box h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #1652a0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #1652a0;
+    border: 2px solid #1652a0;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* List of books styles */
+.table-container {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.table-container h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+   
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color:white;
+}
+
+th {
+    background-color: #1652a0;
+    color:white;
+}
+
+td img {
+    border-radius: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Add books styles */
+.form-container {
+    width: 300px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+.textbox label {
+    display: block;
+    margin-bottom: 5px;
+}
+.textbox input[type="text"],
+.textbox input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 18px;
+}
+
+.textbox input[type="text"]:focus,
+.textbox input[type="file"]:focus {
+    outline: none;
+    border-bottom: 2px solid #1652a0;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #1652a0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top:20px;
+}
+
+.btn:hover {
+    background: #1652a0;
+    border: 2px solid #1652a0;
+}
+
+.textbox select {
+    width: 100%;
+    padding: 10px;
+    background-color: #22579c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textbox select:focus {
+    outline: none;
+    background-color: #1652a0;
+}
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }
+}
